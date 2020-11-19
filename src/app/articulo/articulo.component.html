@@ -1,0 +1,22 @@
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Modelo</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let articulo of lista_articulos">
+            <td>{{ articulo.id }}</td>
+            <td>{{ articulo.nombre }}</td>
+            <td>{{ articulo.descripcion }}</td>
+            <td>{{ articulo.modelo }}</td>
+            <td>{{ articulo.cantidad }}</td>
+            <td>{{ articulo.precioOriginal }}€</td>
+        </tr>
+    </tbody>
+</table>

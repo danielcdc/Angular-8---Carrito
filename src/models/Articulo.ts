@@ -1,11 +1,11 @@
-class Articulo {
+export class Articulo {
     id: number;
     nombre: string;
     descripcion: string;
     modelo: string;
     cantidad: number;
     precioOriginal: number;
-    precioRebajado: number;
+    //precioRebajado: number;
 
     constructor(id, nombre, descripcion, modelo, cantidad = 1, precioOriginal){
         this.id = id;
@@ -17,4 +17,3 @@ class Articulo {
     }
 }
 
-let lista_articulos: Articulo[] = new Array();
